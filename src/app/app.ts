@@ -2,7 +2,7 @@ import { Component, signal, inject } from '@angular/core';
 import { HeaderNavComponent } from './header-nav';
 import { PosTerminalComponent } from './pos-terminal';
 import { InventoryComponent } from './inventory';
-import { DigikhataComponent } from './digikhata';
+import { DigiKhataComponent } from './digikhata';
 import { WhatsappToolsComponent } from './whatsapp-tools';
 import { ReportsComponent } from './reports';
 import { SettingsComponent } from './settings';
@@ -16,7 +16,7 @@ import { StoreService } from './store.service';
     HeaderNavComponent,
     PosTerminalComponent,
     InventoryComponent,
-    DigikhataComponent,
+    DigiKhataComponent,
     WhatsappToolsComponent,
     ReportsComponent,
     SettingsComponent,
