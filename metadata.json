@@ -1,0 +1,6 @@
+{
+  "name": "H S Kirana & DigiKhata POS",
+  "description": "Pakistani Kirana Store POS, Inventory Management, DigiKhata Udhar Ledger, WhatsApp Direct Receipts & QR Generator, and Sales Reports.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

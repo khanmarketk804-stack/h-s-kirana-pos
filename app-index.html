@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>H S Kirana Store — Fast POS, Inventory, DigiKhata & WhatsApp</title>
+    <base href="/" />
+    
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="H S Kirana Store — POS, DigiKhata & WhatsApp Utilities" />
+    <meta name="description" content="Ultra-fast Pakistani Kirana & Rashan Store POS, Inventory stock manager, DigiKhata Udhar Ledger, WhatsApp receipt sharing & QR Code generator." />
+    <meta name="keywords" content="Kirana POS, Rashan store software, DigiKhata, Udhar ledger, WhatsApp receipt, wa.me generator, Pakistan grocery POS, H S Store" />
+    <meta name="author" content="H S Kirana POS" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="H S Kirana Store — POS & DigiKhata Udhar Ledger" />
+    <meta property="og:description" content="Instant POS billing, stock management, DigiKhata Udhar tracking, and WhatsApp receipt generator for Kirana stores." />
+    <meta property="og:site_name" content="H S Kirana Store POS" />
+
+    <!-- PWA & Mobile Theme -->
+    <meta name="theme-color" content="#059669" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('ServiceWorker registered:', reg.scope))
+            .catch(err => console.log('ServiceWorker registration failed:', err));
+        });
+      }
+    </script>
+    
+    <!-- Favicon SVG -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2C6.48 2 2 6.48 2 12c0 1.94.55 3.75 1.5 5.29L2 22l4.82-1.46C8.31 21.48 10.1 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm.05 16.5c-1.63 0-3.15-.45-4.46-1.25l-.32-.2-2.86.87.89-2.77-.21-.34A7.94 7.94 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8.5-7.95 8.5z'/></svg>" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "H S Kirana & DigiKhata POS",
+      "description": "Kirana Store POS, Inventory Management, DigiKhata Udhar Ledger, WhatsApp Direct Receipts & QR Generator.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PKR"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-emerald-200 selection:text-emerald-900">
+    <app-root></app-root>
+  </body>
+</html>
