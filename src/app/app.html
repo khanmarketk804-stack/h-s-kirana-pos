@@ -1,0 +1,48 @@
+<div [class.dark]="storeService.isDarkMode()" class="min-h-screen bg-slate-100/70 dark:bg-slate-950 flex flex-col font-sans text-slate-900 dark:text-slate-100 transition-colors">
+  
+  <!-- Header Navigation -->
+  <app-header-nav 
+    [activeTab]="activeTab()" 
+    (tabChange)="setTab($event)">
+  </app-header-nav>
+
+  <!-- Main View Area -->
+  <main class="flex-1 pb-10">
+    @switch (activeTab()) {
+      @case ('pos') {
+        <app-pos-terminal></app-pos-terminal>
+      }
+      @case ('inventory') {
+        <app-inventory></app-inventory>
+      }
+      @case ('digikhata') {
+        <app-digikhata></app-digikhata>
+      }
+      @case ('whatsapp') {
+        <app-whatsapp-tools></app-whatsapp-tools>
+      }
+      @case ('reports') {
+        <app-reports></app-reports>
+      }
+      @case ('settings') {
+        <app-settings></app-settings>
+      }
+    }
+  </main>
+
+  <!-- Sticky Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-3 px-4 border-t border-slate-800 no-print">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div>
+        <strong class="text-white">{{ storeService.config().storeName }}</strong> • Complete 100% Client-Side Kirana POS & Khata System
+      </div>
+      <div class="flex items-center gap-3 text-[11px]">
+        <span>⚡ Keyboard Shortcuts: <kbd class="bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded font-mono">F2</kbd> Search • <kbd class="bg-slate-800 text-emerald-400 px-1.5 py-0.5 rounded font-mono">Esc</kbd> Clear</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PIN Modal & Lock Overlay -->
+  <app-pin-modal></app-pin-modal>
+
+</div>
