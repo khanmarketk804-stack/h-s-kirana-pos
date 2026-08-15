@@ -1,8 +1,8 @@
 import { Component, inject, input, output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { Transaction } from '../models/store.models';
-import { StoreService } from '../services/store.service';
+import { Transaction } from './store.models';
+import { StoreService } from './store.service';
 
 @Component({
   selector: 'app-receipt-modal',
