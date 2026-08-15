@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import type { Html5Qrcode } from 'html5-qrcode';
-import { StoreService } from '../services/store.service';
-import { InventoryItem, ItemCategory, PaymentMethod, Transaction, CATEGORY_LIST } from '../models/store.models';
+import { StoreService } from './store.service';
+import { InventoryItem, ItemCategory, PaymentMethod, Transaction, CATEGORY_LIST } from './store.models';
 import { ReceiptModalComponent } from './receipt-modal';
 
 @Component({
