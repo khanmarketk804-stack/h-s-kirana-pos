@@ -2,8 +2,8 @@ import { Component, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { StoreService } from '../services/store.service';
-import { Transaction } from '../models/store.models';
+import { StoreService } from './store.service';
+import { Transaction } from './store.models';
 import { ReceiptModalComponent } from './receipt-modal';
 
 export type ReportTimeframe = 'today' | '7days' | '30days' | 'all';
