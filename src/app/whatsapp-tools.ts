@@ -2,7 +2,7 @@ import { Component, inject, signal, ElementRef, ViewChild, AfterViewInit } from 
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { StoreService } from '../services/store.service';
+import { StoreService } from './store.service';
 import QRCode from 'qrcode';
 
 @Component({
