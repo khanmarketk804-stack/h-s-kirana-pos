@@ -2,8 +2,7 @@ import { Component, inject, signal, HostListener, ChangeDetectionStrategy } from
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { StoreService } from '../services/store.service';
-
+import { StoreService } from './store.service';
 @Component({
   selector: 'app-pin-modal',
   standalone: true,
