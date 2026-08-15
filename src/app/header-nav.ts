@@ -1,7 +1,7 @@
 import { Component, inject, output, input, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
-import { StoreService } from '../services/store.service';
+import { StoreService } from './store.service';
 
 export type ActiveTab = 'pos' | 'inventory' | 'digikhata' | 'whatsapp' | 'reports' | 'settings';
 
