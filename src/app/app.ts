@@ -25,7 +25,8 @@ import { StoreService } from './store.service';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class AppComponent {
+export class App {
+
   storeService = inject(StoreService);
   activeTab = signal<ActiveTab>('pos');
 
