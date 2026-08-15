@@ -1,5 +1,5 @@
 import { Component, signal, inject } from '@angular/core';
-import { HeaderNavComponent } from './header-nav';
+import { HeaderNavComponent, ActiveTab } from './header-nav';
 import { PosTerminalComponent } from './pos-terminal';
 import { InventoryComponent } from './inventory';
 import { DigiKhataComponent } from './digikhata';
@@ -27,9 +27,9 @@ import { StoreService } from './store.service';
 })
 export class AppComponent {
   storeService = inject(StoreService);
-  activeTab = signal<string>('pos');
+  activeTab = signal<ActiveTab>('pos');
 
-  setTab(tab: string) {
+  setTab(tab: ActiveTab) {
     this.activeTab.set(tab);
   }
 }
