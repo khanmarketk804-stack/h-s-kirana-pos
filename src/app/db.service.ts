@@ -11,8 +11,7 @@ import {
   SaleItemEntity,
   PaymentEntity,
   SettingEntity
-} from '../models/store.models';
-
+} from './store.models';
 export interface ConfigEntity extends StoreConfig {
   id: string;
 }
