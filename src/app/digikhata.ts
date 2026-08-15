@@ -2,8 +2,8 @@ import { Component, inject, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { StoreService } from '../services/store.service';
-import { Customer, Transaction } from '../models/store.models';
+import { StoreService } from './store.service';
+import { Customer, Transaction } from './store.models';
 
 @Component({
   selector: 'app-digikhata',
