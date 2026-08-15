@@ -11,8 +11,7 @@ import {
   WhatsAppTemplate,
   PaymentMethod,
   UserRole
-} from '../models/store.models';
-
+} from './store.models';
 const STORAGE_KEYS = {
   INVENTORY: 'hs_kirana_inventory_v1',
   CUSTOMERS: 'hs_kirana_customers_v1',
